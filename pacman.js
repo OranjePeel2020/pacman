@@ -798,12 +798,12 @@ var PACMAN = (function () {
         ctx.font      = "12px BDCartoonShoutRegular";
         ctx.fillText(text, 
                      (position["new"]["x"] / 10) * map.blockSize, 
-                     ((position["new"]["y"] + 5) / 10) * map.blockSize);
+                     ((position["new"]["y"] + 10) / 10) * map.blockSize);
     }
     
     function dialog(text) {
         ctx.fillStyle = "#FFFF00";
-        ctx.font      = "14px BDCartoonShoutRegular";
+        ctx.font      = "12px BDCartoonShoutRegular";
         var width = ctx.measureText(text).width,
             x     = ((map.width * map.blockSize) - width) / 2;        
         ctx.fillText(text, x, (map.height * 10) + 8);
